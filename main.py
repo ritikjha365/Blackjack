@@ -186,13 +186,6 @@ def display_end_game_message():
     pygame.mixer.music.unpause()
 
 
-
-
-
-
-
-
-
 # Main game loop
 run = True
 while run:
