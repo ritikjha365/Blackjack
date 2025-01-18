@@ -153,29 +153,7 @@ def check_endgame(hand_act, deal_score, play_score, result, totals, add):
             elif result == 4:  # Tie
                 draw_sound.play()
     return result, totals, add
-
-# def display_end_game_message():
-#     pygame.mixer.music.pause()
-#     win_sound.stop()  # Stop any other sounds
-#     lose_sound.stop()
-#     draw_sound.stop()
-
-#     if records[0] == 5:
-#         end_game_message = font.render("You WON the game!", True, 'green')
-#         final_win_sound.play()  # Play the winning sound
     
-#     elif records[1] == 5:
-#         end_game_message = font.render("You LOST the game!", True, 'red')
-#         final_lose_sound.play()  # Play the losing sound
-
-#     screen.fill('black')  # Clear the screen
-#     screen.blit(end_game_message, (WIDTH // 2 - end_game_message.get_width() // 2, HEIGHT // 2 - end_game_message.get_height() // 2))
-#     pygame.display.flip()
-#     pygame.time.wait(3000)  # Wait for 3 seconds before restarting the game
-
-#     # Resume background music after the pop-up
-#     pygame.mixer.music.unpause()
-
 
 def display_end_game_message():
     # Pause background music and other sounds
