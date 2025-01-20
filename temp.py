@@ -31,20 +31,20 @@ add_score = False
 results = ['', 'PLAYER BUSTED o_O', 'Player WINS! :)', 'DEALER WINS :(', 'TIE GAME...']
 
 # Load casino table background
-casino_table = pygame.image.load('casino_table.png')
+casino_table = pygame.image.load('assets/casino_table.png')
 casino_table = pygame.transform.scale(casino_table, (WIDTH, HEIGHT))
 
 # Load background music
-pygame.mixer.music.load("background_music.mp3")  # Replace with the path to your audio file
+pygame.mixer.music.load("assets/background_music.mp3")  # Replace with the path to your audio file
 pygame.mixer.music.set_volume(0.1)  # Set the volume (optional)
 pygame.mixer.music.play(-1, 0.0)  # Play the music indefinitely
 
 # Load sounds
-win_sound = pygame.mixer.Sound('win_sound.wav')
-lose_sound = pygame.mixer.Sound('lose_sound.wav')
-draw_sound = pygame.mixer.Sound('draw_sound.wav')
-final_win_sound = pygame.mixer.Sound('finla_win_sound.wav')
-final_lose_sound = pygame.mixer.Sound('finla_lose_sound.wav')
+win_sound = pygame.mixer.Sound('assets/win_sound.wav')
+lose_sound = pygame.mixer.Sound('assets/lose_sound.wav')
+draw_sound = pygame.mixer.Sound('assets/draw_sound.wav')
+final_win_sound = pygame.mixer.Sound('assets/final_win_sound.wav')
+final_lose_sound = pygame.mixer.Sound('assets/final_lose_sound.wav')
 
 # Functions
 def deal_cards(current_hand, current_deck):
@@ -202,7 +202,7 @@ def display_end_game_message():
         pygame.display.flip()
 
         # Add a 3-second delay for the losing screen
-        pygame.time.wait(3000)  # Wait for 3 seconds before restarting the game
+        pygame.time.wait(6200)  # Wait for 3 seconds before restarting the game
 
     # Resume background music after the pop-up
     pygame.mixer.music.unpause()
