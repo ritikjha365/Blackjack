@@ -5,7 +5,6 @@ import pygame
 # Initialize Pygame
 pygame.init()
 pygame.mixer.init()
-
 # Game variables
 cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 one_deck = 4 * cards
