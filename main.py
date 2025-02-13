@@ -11,7 +11,7 @@ cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 one_deck = 4 * cards
 decks = 4
 WIDTH, HEIGHT = pygame.display.Info().current_w, pygame.display.Info().current_h  # Full screen width and height
-screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)  # Full screen mode
+screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
 pygame.display.set_caption('Pygame Blackjack!')
 fps = 60
 timer = pygame.time.Clock()
