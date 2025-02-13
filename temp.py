@@ -45,6 +45,8 @@ lose_sound = pygame.mixer.Sound('assets/lose_sound.wav')
 draw_sound = pygame.mixer.Sound('assets/draw_sound.wav')
 final_win_sound = pygame.mixer.Sound('assets/finla_win_sound.wav')
 final_lose_sound = pygame.mixer.Sound('assets/finla_lose_sound.wav')
+final_win_sound = pygame.mixer.Sound('assets/final_win_sound.wav')
+final_lose_sound = pygame.mixer.Sound('assets/final_lose_sound.wav')
 
 # Functions
 def deal_cards(current_hand, current_deck):
@@ -180,7 +182,7 @@ def display_end_game_message():
         pygame.display.flip()
 
         # Add a 3-second delay for the losing screen
-        pygame.time.wait(3000)  # Wait for 3 seconds before restarting the game
+        pygame.time.wait(6200)  # Wait for 3 seconds before restarting the game
 
     # Resume background music after the pop-up
     pygame.mixer.music.unpause()
